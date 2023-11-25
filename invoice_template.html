@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>A simple, clean, and responsive HTML invoice template</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+		<div class="invoice-box">
+			<form action="">
+				<table cellpadding="0" cellspacing="0">
+					<tr class="top">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td class="title" style="width: 50%;">
+										<label for="">Logo</label>
+										<div class="input-group mt-3" style="width: 70%;">
+											<input name="logo" type="file" class="form-control" id="inputGroupFile01" >
+										</div>
+										<!-- <img
+											src="https://sparksuite.github.io/simple-html-invoice-template/images/logo.png"
+											style="width: 50%; max-width: 70%"
+										/> -->
+									</td>
+	
+									<td style="width: 50%;">
+										<div class="input-group mb-1">
+											<span class="input-group-text" id="basic-addon1">Invoice #:</span>
+											<input name="invoiceNum" type="text" class="form-control" value="123" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+										<div class="input-group mb-1">
+											<span class="input-group-text" id="basic-addon1">Created:</span>
+											<input name="crDate" type="text" class="form-control" value="January 1, 2023" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+										<div class="input-group mb-3">
+											<span class="input-group-text" id="basic-addon1">Due:</span>
+											<input name="dueDate" type="text" class="form-control" value="February 1, 2023" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+	
+					<tr class="information">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td>
+										<div class="form-floating" style="width:70%">
+											<textarea name="sndAdr" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+											<label for="floatingTextarea2">Sender Adress</label>
+										</div>
+									</td>
+	
+									<td style="display: flex;justify-content: flex-end;">
+										<div class="form-floating text-end" style="width: 70%;">
+											<textarea name="reAdr" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+											<label for="floatingTextarea2">Reciever Adress</label>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+	
+					<tr class="heading">
+						<td>Item</td>
+	
+						<td>Price</td>
+					</tr>
+	
+					<tr class="item">
+						<td>
+							<div class="input-group" style="width: 70%">
+								<label class="p-2">1.</label>
+								<input name="item1" type="text" class="form-control" value="Website design" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</td>
+	
+						<td>
+							<div class="input-group" >
+								<input name="price1" type="text" class="form-control text-end" value="300" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								<label class="p-2">₹</label>
+							</div>
+						</td>
+					</tr>
+	
+					<tr class="item">
+						<td>
+							<div class="input-group" style="width: 70%">
+								<label class="p-2">2.</label>
+								<input name="item2" type="text" class="form-control" value="Hosting (3 months)" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</td>
+	
+						<td>
+							<div class="input-group" >
+								<input name="price2" type="text" class="form-control text-end" value="75.00" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								<label class="p-2">₹</label>
+							</div>
+						</td>
+					</tr>
+	
+					<tr class="item">
+						<td>
+							<div class="input-group" style="width: 70%">
+								<label class="p-2">3.</label>
+								<input name="item3" type="text" class="form-control" value="Domain name (1 year)" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							</div>
+						</td>
+	
+						<td>
+							<div class="input-group" >
+								<input name="price3" type="text" class="form-control text-end" value="10.00" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+								<label class="p-2">₹</label>
+							</div>
+						</td>
+					</tr>
+	
+					<tr class="total">
+						<td></td>
+	
+						<td><label class="p-2">Total : </label><label class="p-2">385.00</label><label class="p-2">₹</label></td>
+					</tr>
+					<tr class="">
+						<td></td>
+						<td><button class="btn btn-success" type="submit">Generate Invoice</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+			
+			
+			
+
+
+
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	</body>
+</html>
